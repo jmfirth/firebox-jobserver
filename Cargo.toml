@@ -22,7 +22,7 @@ nix = { version = "0.28.0", features = ["fs"] }
 getrandom = { version = "0.3.2", features = ["std"] }
 
 [dev-dependencies]
-tempfile = "3.10.1"
+tempfile = "3.23.0"
 
 [[test]]
 name = "client"
