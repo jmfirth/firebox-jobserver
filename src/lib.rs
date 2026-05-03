@@ -1,3 +1,6 @@
+#![allow(unexpected_cfgs)]
+#![allow(unsafe_op_in_unsafe_fn)]
+#![allow(unreachable_pub)]
 //! An implementation of the GNU make jobserver.
 //!
 //! This crate is an implementation, in Rust, of the GNU `make` jobserver for

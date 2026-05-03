@@ -64,10 +64,7 @@ impl Client {
     }
 
     pub fn string_arg(&self) -> String {
-        panic!(
-            "On this platform there is no cross process jobserver support,
-             so Client::configure is not supported."
-        );
+        String::new()
     }
 
     pub fn available(&self) -> io::Result<usize> {
@@ -76,7 +73,7 @@ impl Client {
     }
 
     pub fn configure(&self, _cmd: &mut Command) {
-        unreachable!();
+        // no-op: WASI has no cross-process jobserver pipes
     }
 }
 
